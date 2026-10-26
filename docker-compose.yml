@@ -1,0 +1,30 @@
+
+services:
+  bank_a:
+    image: mongo:4.4
+    container_name: bank_a
+    ports:
+      - "27017:27017"
+    volumes:
+      - bank_a_data:/data/db
+
+  bank_b:
+    image: mongo:4.4
+    container_name: bank_b
+    ports:
+      - "27018:27017"
+    volumes:
+      - bank_b_data:/data/db
+
+  bank_c:
+    image: mongo:4.4
+    container_name: bank_c
+    ports:
+      - "27019:27017"
+    volumes:
+      - bank_c_data:/data/db
+
+volumes:
+  bank_a_data:
+  bank_b_data:
+  bank_c_data:

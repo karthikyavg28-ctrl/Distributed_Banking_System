@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 28px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+.summary {
+    background: #1d4ed8;
+    color: white;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.summary h1 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.account-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.account-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.account-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.account-card p {
+    margin: 8px 0;
+}
+
+.balance {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.transfer-section {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+form {
+    display: grid;
+    gap: 12px;
+    max-width: 500px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    width: 100%;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+#message {
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+}
